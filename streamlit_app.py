@@ -34,12 +34,13 @@ def main():
     st.title('Are You Shadowbanned From Reddit?')
     st.write('')
     show_button = False
-    username = st.text_input('Your reddit username')
+    username = st.text_input('Enter your username, then hit Enter/Return')
     if username:
         show_button = True
         notfound, res = userinfo(username)
         if notfound:
-            st.markdown('## You are **shadowbanned**! 💀')
+            st.markdown('## You are **shadowbanned**! 💀*')
+            st.markdown('*or the account does not exist.')
         else:
             st.markdown('## You are **not** shadowbanned! 🎉')
         if show_button:

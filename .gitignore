@@ -153,5 +153,3 @@ cython_debug/
 
 # Other
 .DS_Store
-Dockerfile
-docker-compose.yml
